@@ -1,0 +1,62 @@
+--root{
+  --font_color: black;
+}
+*{
+  margin:0;
+  padding: 0;
+}
+li img, .page_title img{
+  width:50px;
+  height: 50px; /* a precaution */
+  border: 1px solid black;
+  margin: 10px;
+}
+li > h4{
+  font-size: 0.95em;
+}
+.page_title img{
+  width: 70px;
+  height: 70px;
+}
+ul{
+  list-style-type: none;
+}
+a{text-decoration: none;
+  color: var(--font_color)
+}
+/* original grid container */
+
+.side_content{
+  display: grid;
+  /* change the fr values to static vals */
+  grid-template-rows: 100px 400px 200px;
+  border: 1px solid blue;
+  row-gap:20px;
+  padding: 10px;
+}
+/* boxes inside the container */
+.page_title{
+  grid-row: 1/2;
+  /* height: 150px; */
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  border: 1px solid yellow;
+}
+.navigation{grid-row: 2/3}
+.user_nav{grid-row: 3/4}
+.navigation, .user_nav{
+  display:grid;
+  grid-template-rows: repeat(6, minmax(50px, 100px));
+  border: 1px solid red;
+  /* row-gap: 10px; */
+  padding-left: 20px;
+}
+.user_nav{grid-template-rows: repeat(3, minmax(50px, 100px));}
+/* Styling within sections */
+.user_nav > li, .navigation > li{
+  display: grid;
+  border: 1px solid yellow;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+}
