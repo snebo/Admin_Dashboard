@@ -1,25 +1,34 @@
 :root{
-  --primary_color: rgb(50, 136, 206);
-  --background_color: rgb(192, 190, 190);
-  --secoundry_color: white;
+  --primary_color: rgb(69, 124, 124);
+  --background_color: #50cc2a;
+  --asscent_color: rgb(25, 156, 13);
+  --btn_color: #04dd45;
+  --font_color: #032539;
+  --empty_space: #FBF3F2;
 }
+
 *{
+  font-family: "Outfit", sans-serif;
+  color: var(--font_color);
   margin: 0;
   padding: 0;
 }
 body{width: 100vw; height: 100vh;}
+
 .dash_container{
   display: grid;
   grid-template-columns: 1fr 3.5fr;
-  grid-template-rows: 1fr 8fr;
-  /* gap:10px; */
+  grid-template-rows: 1fr 5fr;
+  row-gap:10px;
   width: 100%;
   height: 100%;
+  background-color: var(--empty_space);
 }
 .header{
   grid-area: 1/2 / 2/2;
-  background-color: var(--secoundry_color);
+  background-color: white;
   /* border: 1px solid black; */
+  box-shadow: 1px 2px 3px grey;
 }
 .side_content{
   grid-area: 1/1 / -1/2;
@@ -27,8 +36,6 @@ body{width: 100vw; height: 100vh;}
 }
 .main{
   grid-area: 2/2 / -1/-1;
-  background-color: var(--background_color);
-  border: 1px solid red;
 }
 
 .header{
@@ -56,7 +63,6 @@ body{width: 100vw; height: 100vh;}
 .bottom img{
   justify-self:center;
   width: 50px;
-  border: 1px solid black
 }
 
 .top > .search{
@@ -72,8 +78,8 @@ body{width: 100vw; height: 100vh;}
 }
 
 input{
-  background-color: var(--background_color);
-  border: 1px solid var(--background_color);
+  background-color: var(--empty_space);
+  border: 1px solid #ccc;
   border-radius: 20px;
 }
 .user_info.icons{
@@ -88,7 +94,6 @@ input{
 }
 .user_wlc{
   justify-self: left;
-  border: 1px solidd black;
 }
 .btns{
   /* border: 1px solid black; */
@@ -97,8 +102,12 @@ input{
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  background-color: var(--primary_color);
+  background-color: var(--btn_color);
   color: white;
   font-weight: bold;
   cursor: pointer;
+}
+h4{
+  font-size: 1.15em;
+  color: var(--primary_color)
 }
