@@ -1,8 +1,12 @@
 :root{
-  --primary_color: rgb(69, 124, 103);
-  --background_color: #50cc2a;
+  /* --primary_color: rgb(69, 124, 103); */
+  --primary_color: #FF4500;
+  /* --background_color: #50cc2a; */
+  /* --background_color: #aa1515; */
+  --background_color: #1C768F;
   --asscent_color: rgb(25, 156, 13);
-  --btn_color: #04dd45;
+  /* --btn_color: #04dd45; */
+  --btn_color: #1C768F;
   --font_color: #032539;
   --empty_space: #FBF3F2;
 }
