@@ -1,21 +1,7 @@
-/* :root{
-  --primary_color: #FBF3F2;
-  --secoundry_color: white;
-  --asccent_color: #00B9FF;
-  --cardd_color: #faa32a;
-} */
-*{
-  font-family: "Outfit", sans-serif;
-  padding: 0;
-  margin: 0;
-}
-
 .main{
-  /* change to 100% */
   display: grid;
   grid-template-columns:  1fr 1fr;
   grid-template-rows: repeat(2, 1fr);
-  /* row-gap: 8%; */
   gap: 15px;
   padding: 10px;
   background-color: var(--empty_space);
@@ -29,7 +15,6 @@
 .trending-section h4{
   margin-bottom: 10px;
   font-size: 1.3em;
-  /* text-shadow: 1px 1px 0.5px black; */
 }
 
 .announcement-section{
@@ -39,7 +24,6 @@
   grid-area: 2/2 / -1/3;
 }
 .project-section .p_container{
-  /* border: 1px solid black; */
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
@@ -71,12 +55,10 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 5px;
 }
-/* .opts>*{border:1px solid black} */
 .proj-btn{
   width: 30px;
   border-radius: 5px;
 }
-/* content section */
 .announcement-container{
   background-color: white;
   border-radius: 20px;
@@ -94,18 +76,15 @@
 .announcement:last-child p{
   border:none; margin-bottom: 0
 }
-/* trends section */
 .trend-container{
   display: grid;
   grid-auto-rows: repeat(auto-fill, minmax(150px, 1fr));
-  /* border: 2px solid black; */
   border-radius: 15px;
   background-color: white;
   padding: 10px; 
   gap: 8px
 }
 .trend{
-  /* border: 1px solid black; */
   display:grid;
   border-radius: 10px;
   padding: 4px;
@@ -121,7 +100,6 @@
 }
 .trend div{
   justify-self: left;
-  /* border: 1px solid black; */
 }
 #username{
   font-weight: bold;
