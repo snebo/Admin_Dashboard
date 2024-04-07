@@ -28,6 +28,9 @@ Open the index.html file in your web browser to view my solution.
 ## 🛠 Skills
 HTML, CSS
 
+## My_Solution: 
+https://snebo.github.io/Admin_Dashboard/
+
 
 **Contribution:**
 
